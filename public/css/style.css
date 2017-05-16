@@ -1,3 +1,146 @@
-html {
+/*---containers---*/
+
+.banner {
+	background: #191919;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+	background: darkgrey;
+}
+
+.wrapper {
+	min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: calc(-10% - 35px); 
+}
+
+.wrapper:after {
+  content: "";
+  display: block;
+  height: calc(10% + 35px);
+}
+
+footer {
+	text-align: center;
+	width: 66.67%;
+	padding: 5% 16.665%;
+	background-color: lightgrey;
+	font-family: 'Acme', sans-serif;
+	color: darkgrey;
+}
+
+#userProfile {
+	float: right;
+}
+
+.primary {
+	display: inline-block;
+}
+
+.primaryHead {
+	background: grey;
+	width: 60%;
+	margin: 75px 0 0 10%;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.primaryBody {
+	background: black;
+	width: 60%;
+	margin: 0 0 0 10%;
+	padding: 10px 0;
+}
+
+.email,.pass {
+	display: inline-block;
+	width: 200px;
+	padding: 0 0 0 55%;
+}
+
+.secondary {
+	width: 10%%;
+	height: 75%;
+	margin: 75px 5% 0 5%;
+	display: inline-block;
 	background: black;
 }
+
+/*---text-elements---*/
+
+h1 {
+	margin: 0 0;
+	padding: 15px;
+	width: 120px;
+	display: inline-block;
+	font-family: 'Acme', sans-serif;
+}
+
+h5 {
+	margin: 0;
+	width: 33.33%;
+	height: 3px;
+	font-size: 1.5em;
+	display: inline-block;
+}
+
+label {
+	color: white;
+	font-family: 'PT Sans', sans-serif;
+}
+
+input {
+	font-family: 'Baloo Da', cursive;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+
+/*---elements---*/
+
+button {
+	margin: 0;
+	display: inline-block;
+	border-radius: 25px;
+	border: 4px white;
+	padding: 5px;
+	background: lightgrey;
+	float: right;
+	font-family: 'Acme', sans-serif;
+	margin: 15px 15px 15px 0;
+	font-size: 1.25em;
+}
+
+button:hover {
+	background: grey;
+	border: black;
+}
+
+.logo {
+	width: 32px;
+	display: inline;
+	margin: 0 calc(16.665% - 32px);
+}
+
+
+/*--- CLEARFIX --- */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
